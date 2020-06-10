@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+}
+#container{
+    position: relative;
+}
+#header{
+    height: 80px;
+    background-color: coral;
+}
+.p1{
+    height: 30px;
+    width: 30px;
+}
+#hleft{
+    display: inline-block;
+    width: 40%;
+}
+#hleft p{
+    font-size: 20px;
+    color: white;
+    padding-left: 200px;
+}#hright{
+    display: inline-block;
+    width: 55%;
+}
+#hright p{
+    padding-left: 300px;
+}
+#like{
+    background-color: teal;
+    height: 750px;
+}
+#like h3{
+    text-align: center;
+    margin: 0;
+    padding-top: 40px;
+}
+#like img{
+    width: 200px;
+    height: 230px;
+}
+#pic1{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 260px;
+    top: 180px;
+}
+#pic2{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 560px;
+    top: 180px;
+}
+#pic3{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 860px;
+    top: 180px;
+}
+#pic4{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 1160px;
+    top: 180px;
+}
+#pic5{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 260px;
+    top: 510px;
+}
+#pic6{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 560px;
+    top: 510px;
+}
+#pic7{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 860px;
+    top: 510px;
+}#pic8{
+    background-color: seashell;
+    height: 280px;
+    width: 200px;
+    position: absolute;
+    left: 1160px;
+    top: 510px;
+}
+#footer{
+    height: 200px;
+    background-color: coral;
+}
+#footer p{
+    margin: 0;
+    font-size: 28px;
+    padding-left: 100px;
+    padding-top: 20px;
+}
+#pic9{
+    width: 250px;
+    height: 160px;
+    position: absolute;
+    right: 30px;
+    bottom: 18px;
+}
