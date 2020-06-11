@@ -5,7 +5,6 @@ body{
     position: relative;
 }
 #header{
-    height: 80px;
     background-color: coral;
 }
 .p1{
@@ -29,7 +28,7 @@ body{
 }
 #like{
     background-color: teal;
-    height: 750px;
+    
 }
 #like h3{
     text-align: center;
@@ -40,83 +39,35 @@ body{
     width: 200px;
     height: 230px;
 }
-#pic1{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 260px;
-    top: 180px;
+#onepiece{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-#pic2{
-    background-color: seashell;
+#pic{
+    width: 220px;
     height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 560px;
-    top: 180px;
+    background-color: seashell;
+    text-align: center;
+    margin-bottom: 50px;
 }
-#pic3{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 860px;
-    top: 180px;
-}
-#pic4{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 1160px;
-    top: 180px;
-}
-#pic5{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 260px;
-    top: 510px;
-}
-#pic6{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 560px;
-    top: 510px;
-}
-#pic7{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 860px;
-    top: 510px;
-}#pic8{
-    background-color: seashell;
-    height: 280px;
-    width: 200px;
-    position: absolute;
-    left: 1160px;
-    top: 510px;
+#pic:not(:last-child){
+    margin-right: 50px;
 }
 #footer{
-    height: 200px;
     background-color: coral;
 }
-#footer p{
-    margin: 0;
-    font-size: 28px;
-    padding-left: 100px;
-    padding-top: 20px;
+#last{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
 }
-#pic9{
-    width: 250px;
-    height: 160px;
-    position: absolute;
-    right: 30px;
-    bottom: 18px;
+#lastleftp{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 80px;
+}
+#lastrirghti{
+    margin-top: 50px;
+    margin-right: 180px;
 }
