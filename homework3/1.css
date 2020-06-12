@@ -12,19 +12,22 @@ body{
     width: 30px;
 }
 #hleft{
-    display: inline-block;
-    width: 40%;
+    float: left;
 }
 #hleft p{
     font-size: 20px;
     color: white;
     padding-left: 200px;
 }#hright{
-    display: inline-block;
-    width: 55%;
+    float:right;
+    padding-right: 200px;
+    padding-top: 30px;
 }
 #hright p{
     padding-left: 300px;
+}
+#clear{
+    clear: both;
 }
 #like{
     background-color: teal;
@@ -57,17 +60,16 @@ body{
 #footer{
     background-color: coral;
 }
-#last{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap
+#lastleft{
+    float: left;
+    padding-left: 200px;
+    padding-top: 80px;
 }
-#lastleftp{
+#lastleft span{
     font-size: 30px;
-    margin-top: 50px;
-    margin-left: 80px;
 }
-#lastrirghti{
-    margin-top: 50px;
-    margin-right: 180px;
+#lastright{
+    float: right;
+    padding-right: 200px;
+    padding-top: 20px;
 }
