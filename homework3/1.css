@@ -10,7 +10,7 @@ body{
 }
 #headcontent{
     width: 1200px;
-    vertical-align: middle;;
+    vertical-align: middle;
     margin: 0 auto;
     padding: 15px 0px;
 }
@@ -20,6 +20,9 @@ body{
 }
 #hleft{
     float: left;
+}
+#hleft img{
+    vertical-align: middle;
 }
 #hleft p{
     font-size: 20px;
