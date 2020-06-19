@@ -5,13 +5,7 @@ $(".send").on("click", function () {
     addInterval(jqueryDom);
 });
 $(".clear").on("click", function () {
-    if (isShow) {
-        $(".bullet").css("opacity", 0);
-        isShow = false;
-    } else {
-        $(".bullet").css("opacity", 1);
-        isShow = true;
-    }   
+    $(".container").empty()
 });
 function createScreenbullet(text) {
     var jqueryDom = $("<div class='bullet'>" + text + "</div>");
