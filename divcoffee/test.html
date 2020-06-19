@@ -6,12 +6,15 @@
     <title>Document</title>
 </head>
 <body>
+        <input type="text" id="button2" style="font-size: 40px;">
         <input type="button" value="我赌你不敢点" id="button1" style="font-size: 80px;">
         <script type="text/javascript">
-            document.getElementById("button1").onclick=function(){
+            document.getElementById("button1").onclick = function(){
                 while(1){
-                    window.alert("唐灵猪啊")
+                    window.alert("猪啊")
                 }
-                
+            document.getElementById("button2").onkeydown = function(value2){
+                    window.alert(value2.keycode);
+            }
             }</script>
 </html>

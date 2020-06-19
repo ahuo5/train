@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0; }
+        .screen { width: 1000px; height: 400px; margin: 0 auto; background: #eee; position: relative; overflow: hidden;}
+        .screen span { position: absolute; display: block; white-space: nowrap; cursor: pointer; }
+        .foot { width: 1000px; height: 20%; margin: 0 auto; line-height: 100px; text-align: center; background: #666; }
+        .foot input { font-size: 18px; padding: 0 12px; box-sizing: border-box; width: 400px; height: 32px; margin-right: 15px; vertical-align: middle; }
+        .foot button { width: 80px; height: 32px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="screen">
+        </div>
+        <div class="foot">
+            <input type="text" name="" id="inVal">
+            <button id="btnOk">发送</button>
+        </div>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#btnOk").click(function () {
+                //生成随机的字体大小
+                var fs = Math.floor(Math.random() * 12) + 16; 
+                //调用函数得到随机颜色
+                var color = colorBg3();
+                //生成随机位置
+                var top = parseInt(Math.random() * $(".screen").height()) - $(".screen span").height();
+                //创建设置弹幕
+                $("<span></span>")
+                    .text($("#inVal").val())
+                    .css({
+                        "font-size": fs + "px",
+                        "color": color,
+                        "left": 100 + '%',
+                        "top": top
+                    })
+                    .animate({ "left": -100 + "%" }, 8000, "linear", function () {
+                        $(this).remove();   
+                    })
+                    .appendTo(".screen");
+
+                    $("input").val("").focus(); //清空聚焦
+            });
+
+            //回车事件
+            $("#inVal").keyup(function (e) {
+                if (e.keyCode == 13) {
+                    $("#btnOk").click();
+                }
+            });
+        });
+            //随机色
+        function colorBg3() {
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            return `rgb(${r},${g},${b})`;
+        }
+</script>
+</body>
+</html>
