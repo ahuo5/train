@@ -1,9 +1,10 @@
 $(".send").on("click", function () {
-    var jqueryDom = createScreenbullet($("#content").val());
+    var jqueryDom = createScreenbullet($(".content").val());
     addInterval(jqueryDom);
+    $(".content").val("");
 });
 $(".clear").on("click", function () {
-    $(".container").empty()
+    $(".container").empty();
 });
 function createScreenbullet(text) {
     var jqueryDom = $("<div class='bullet'>" + text + "</div>");
@@ -24,18 +25,18 @@ function createScreenbullet(text) {
     $(".container").append(jqueryDom);
     return jqueryDom;
 }
+var things = [];
 function addInterval(jqueryDom) {
-    things = [];
     var i = 0;
     var speed = Math.floor(Math.random() * 5) + 1;
     var right = jqueryDom.offset().right - $(".container").offset().right;
-    var things = setInterval(function () {
+    var thing = setInterval(function () {
         right--;
         jqueryDom.css("right", (i += speed)+ "px");
         if (jqueryDom.offset().right + jqueryDom.width() < $(".container").offset().right) {
             jqueryDom.remove();
-            clearInterval(things);
+            clearInterval(thing);
         }
     }, 10);
-    things.push(things);
+    things.push(thing);
 }
