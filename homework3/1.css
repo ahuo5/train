@@ -10,13 +10,16 @@ body{
 }
 #headcontent{
     width: 1200px;
-    vertical-align: middle;
     margin: 0 auto;
     padding: 15px 0px;
+}
+#hleft span img{
+    vertical-align: top;
 }
 .p1{
     height: 30px;
     width: 30px;
+    vertical-align: top;
 }
 #hleft{
     float: left;
@@ -24,7 +27,7 @@ body{
 #hleft img{
     vertical-align: middle;
 }
-#hleft p{
+#hleft span{
     font-size: 20px;
     color: white;
 }#hright {

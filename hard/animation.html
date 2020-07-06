@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            25% {
+                transform: translate(1000px, 0) rotate(360deg);
+            }
+
+            50% {
+                transform: translate(1000px, 500px) rotate(720deg);
+            }
+
+            75% {
+                transform: translate(0, 500px) rotate(1080deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotate(1440deg);
+            }
+        }
+
+        .heihei {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            animation-name: move;
+            animation-duration: 12s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+        }
+
+        .heihei img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heihei">
+        <img src="../xt.jpg" alt="">
+    </div>
+</body>
+
+</html>
