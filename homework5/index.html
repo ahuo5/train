@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+  <script src="./libs/scrollReveal/scrollreveal.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="./libs/glide/glide.core.min.css" />
+  <link rel="stylesheet" href="./libs/glide/glide.theme.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>葫芦娃</title>
+</head>
+
+<body>
+  <div id="app">
+    <header>
+      <div class="logo">葫芦兄弟</div>
+      <nav>
+        <a href="./index.html">首页</a>
+        <a href="./about.html">关于我们</a>
+        <a href="#showcases">葫芦赏析</a>
+        <a href="#service">流窜名单</a>
+        <a href="#team-intro">团队成员</a>
+        <a href="./news.html">公司动态</a>
+        <i class="fas fa-search"></i>
+      </nav>
+      <div class="burger">
+        <div class="burger-line1"></div>
+        <div class="burger-line2"></div>
+        <div class="burger-line3"></div>
+      </div>
+    </header>
+    <div id="home" class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <div class="glide__slides">
+          <div class="glide__slide">
+            <div class="slide-caption">
+              <h1>金刚葫芦娃</h1>
+              <h3>
+                在闽江学院，你可以捕捉到野生葫芦娃用来当坐骑。
+              </h3>
+              <button class="explore-btn">了解详情</button>
+            </div>
+            <div class="backdrop"></div>
+            <img src="./images/hulu-banner.jpg" alt="hulu" />
+          </div>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>葫芦娃，您的居家宠物</h1>
+              <h3>
+                在它们分散时，它们往往会骄傲自满，极易捕捉。
+              </h3>
+              <button class="explore-btn">了解详情</button>
+            </div>
+            <div class="backdrop"></div>
+            <img src="./images/hulu-banner1.jpg" alt="hulu"></img>
+          </div>
+          <div class="glide__slide">
+            <div class="slide-caption left">
+              <h1>葫芦娃，您的不二之选</h1>
+              <h3>
+                在它们一起时，您需要赶紧走开，小心被收到宝葫芦里！
+              </h3>
+              <button class="explore-btn">了解详情</button>
+            </div>
+            <div class="backdrop"></div>
+            <img src="./images/hulu-banner2.jpg" alt="hulu"></img>
+          </div>
+        </div>
+      </div>
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+          < </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              >
+            </button>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <button class="glide__bullet" data-glide-dir="=0"></button>
+        <button class="glide__bullet" data-glide-dir="=1"></button>
+        <button class="glide__bullet" data-glide-dir="=2"></button>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      <section id="service" class="service">
+        <h2 class="title1">流窜在外名单</h2>
+        <p class="intro">
+          您需要确定当前葫芦的特点和弱点，并采用一定技巧。
+        </p>
+        <div class="services">
+          <div class="service-item">
+            <i class="fas fa-comments"></i>
+            <h2 class="service-title">大娃</h2>
+            <p class="service-content">
+              力大无穷，巨大化，可使其陷入泥潭。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-paw"></i>
+            <h2 class="service-title">二娃</h2>
+            <p class="service-content">
+              千里眼，顺风耳，灵活聪明，可用带刺的风沙刺瞎双眼。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-pen"></i>
+            <h2 class="service-title">三娃</h2>
+            <p class="service-content">
+              铜头铁臂，钢筋铁骨，刀枪不入，用刚柔阴阳剑缠住。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-medkit"></i>
+            <h2 class="service-title">四娃</h2>
+            <p class="service-content">
+              喷火，吸火，霹雳，可骗其喝冷泉冰凉酒。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-camera"></i>
+            <h2 class="service-title">五娃</h2>
+            <p class="service-content">
+              吸水，吐水，口吐闪电产生降雨，与其打赌饮下超量的酒醉倒。
+            </p>
+          </div>
+          <div class="service-item">
+            <i class="fas fa-check"></i>
+            <h2 class="service-title">六娃</h2>
+            <p class="service-content">
+              隐身术，透体术，乘其不住贴上标记，后暴力制服。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="showcases" class="showcases section-bg">
+        <h2 class="title1">葫芦娃赏析</h2>
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="*">全部</button>
+          <button class="filter-btn" data-filter=".huluwa">葫芦娃</button>
+          <button class="filter-btn" data-filter=".zhuabu">抓捕者</button>
+          <button class="filter-btn" data-filter=".peijue">配角</button>
+        </div>
+        <div class="cases">
+          <div class="case-item huluwa">
+            <img src="./images/hulu1.jpg" alt="" />
+          </div>
+          <div class="case-item zhuabu">
+            <img src="./images/yeye.jpg" alt="" />
+          </div>
+          <div class="case-item peijue">
+            <img src="./images/wugong.jpg" alt="" />
+          </div>
+          <div class="case-item huluwa">
+            <img src="./images/hulu2.jpg" alt="" />
+          </div>
+          <div class="case-item zhuabu">
+            <img src="./images/shejing.jpg" alt="" />
+          </div>
+          <div class="case-item peijue">
+            <img src="./images/hama.jpg" alt="" />
+          </div>
+          <div class="case-item huluwa">
+            <img src="./images/hulu3.jpg" alt="" />
+          </div>
+          <div class="case-item zhuabu">
+            <img src="./images/xiezi.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="data-section">
+        <div class="data-piece">
+          <i class="fas fa-user"></i>
+          <div class="num">3</div>
+          <div class="data-desc">抓捕者</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-award"></i>
+          <div class="num">8548</div>
+          <div class="data-desc">次捕捉成功</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-laugh-wink"></i>
+          <div class="num">5648</div>
+          <div class="data-desc">好评</div>
+        </div>
+        <div class="data-piece">
+          <i class="fas fa-cat"></i>
+          <div class="num">1</div>
+          <div class="data-desc">只库存</div>
+        </div>
+      </section>
+      <section id="team-intro" class="team-intro section-bg">
+        <h2 class="title1">团队成员</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./images/toumu.jpg" alt="" />
+            </div>
+            <h4 class="name">爷爷</h4>
+            <p class="position">头目</p>
+            <ul class="social-links">
+              <li>
+                <a href=""><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./images/bushou.jpg" alt="" />
+            </div>
+            <h4 class="name">蛇精</h4>
+            <p class="position">捕手</p>
+            <ul class="social-links">
+              <li>
+                <a href=""><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-github"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./images/fushou.jpg" alt="" />
+            </div>
+            <h4 class="name">蝎子精</h4>
+            <p class="position">副手</p>
+            <ul class="social-links">
+              <li>
+                <a href=""><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-github"></i></a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="team-member">
+            <div class="profile-image">
+              <img src="./images/canju.jpg" alt="" />
+            </div>
+            <h4 class="name">蛤蟆精</h4>
+            <p class="position">收拾残局</p>
+            <ul class="social-links">
+              <li>
+                <a href=""><i class="fab fa-weixin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-weibo"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-github"></i></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <footer>
+      <div class="footer-menus">
+        <div class="contact-us">
+          <p class="menu-title">联系我们</p>
+          <p>地址：中国福建省福州市闽侯县闽江学院</p>
+          <p>电话：13666666666</p>
+          <p>传真：13666666666</p>
+          <p>电子邮箱：1366666666@qq.com</p>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">提供工具</p>
+          <ul class="menu-items">
+            <li><a href="#">一罐假酒</a></li>
+            <li><a href="#">一张破网</a></li>
+            <li><a href="#">一个老头</a></li>
+            <li><a href="#">两个喽啰</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">葫芦特性</p>
+          <ul class="menu-items">
+            <li><a href="#">诡计多端</a></li>
+            <li><a href="#">呆头呆脑</a></li>
+            <li><a href="#">单打独斗</a></li>
+            <li><a href="#">无中生有</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">公司近况</p>
+          <ul class="menu-items">
+            <li><a href="#">入不敷出</a></li>
+            <li><a href="#">财政困难</a></li>
+            <li><a href="#">急需人才</a></li>
+            <li><a href="#">开疆扩土</a></li>
+          </ul>
+        </div>
+        <div class="service-menu footer-menu">
+          <p class="menu-title">公司标语</p>
+          <ul class="menu-items">
+            <li><a href="#">i'm 抓葫芦</a></li>
+            <li><a href="#">i'm 抓不着</a></li>
+            <li><a href="#">i'm 坚持抓</a></li>
+            <li><a href="#">i'm 能成功</a></li>
+          </ul>
+        </div>
+        <p class="icp-info">有我无敌</p>
+        <p class="rights">
+          &copy; 我们志在必得
+        </p>
+        <div class="scrollToTop">
+          <a href="#home"><i class="fas fa-chevron-up"></i></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="./libs/isotope/isotope.pkgd.min.js"></script>
+  <script src="./libs/anime/anime.min.js"></script>
+  <script src="./libs/glide/glide.min.js"></script>
+  <script src="./libs/smooth-scroll/smooth-scroll.polyfills.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
