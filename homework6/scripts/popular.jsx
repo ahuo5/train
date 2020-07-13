@@ -186,7 +186,7 @@ class App extends React.Component {
                             size="sm"
                             role="status"
                             aria-hidden="true"
-                        />} 加载更多</Button>
+                        />} more</Button>
                     </div>
                 </Content>
                 <Footer>
