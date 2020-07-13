@@ -35,7 +35,7 @@ const Header = (props) => {
 
     return (<div>
         <Container>
-            <Nav className="justify-content-center" variant="pills" activeKey={props.activeKey || 'All' } onSelect={(selectedKey) => props.onClick(selectedKey)} >
+            <Nav className="justify-content-center" variant="pills" activeKey={props.activeKey || 'All'} onSelect={(selectedKey) => props.onClick(selectedKey)} >
                 {menuItems.map((item, key) => <Nav.Item key={key}><Nav.Link eventKey={item} >{item}</Nav.Link></Nav.Item>)}
             </Nav>
         </Container>
@@ -76,7 +76,7 @@ class App extends React.Component {
         this.state = { cards, loading: false, error: null, type: 'all', page: 1 }
     }
     handleNavClick = async (type = 'all', page = 1, pushState = true) => {
-        const {cards} = this.state
+        const { cards } = this.state
         console.log('type', type)
         var url = ''
         switch (type) {
@@ -140,19 +140,19 @@ class App extends React.Component {
         this.handleNavClick(type, page + 1)
     }
     handlePopState = (params) => {
-        const lang = getQueryVariable('language')   
-        this.handleNavClick(lang,this.state.page, false)     
+        const lang = getQueryVariable('language')
+        this.handleNavClick(lang, this.state.page, false)
         console.log('lang', lang)
         console.log('params', params)
-        
+
     }
     componentDidMount() {
-        const lang = getQueryVariable('language')        
+        const lang = getQueryVariable('language')
         this.handleNavClick(lang)
         //  this.setState({lang})
         window.addEventListener('popstate', this.handlePopState)
     }
-    componentWillUnmount () {
+    componentWillUnmount() {
         window.removeEventListener('popstate', this.handlePopState)
     }
     render() {
@@ -191,7 +191,7 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center">
-                        版权所有 &copy; liuwencan
+                        版权所有 &copy; 啊钬
             </div>
                 </Footer>
             </div>
