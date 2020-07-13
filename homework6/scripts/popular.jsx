@@ -191,7 +191,7 @@ class App extends React.Component {
                 </Content>
                 <Footer>
                     <div className="text-center">
-                        版权所有 &copy; 啊钬
+                        版权所有 &copy; 聂守钬
             </div>
                 </Footer>
             </div>
