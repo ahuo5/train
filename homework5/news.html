@@ -35,7 +35,7 @@
     <div class="content-wrapper">
       <section id="company-activities" class="company-activities">
         <h2 class="title1">公司动态</h2>
-        <p class="intro">关注公司动态，获取葫芦娃第一手资讯！！！</p>
+        <p class="intro">关注动态，获取葫芦娃第一手资讯！！！</p>
         <div class="activities">
           <div class="activity" v-for="(article,index) in articleList" :key="index">
             <div class="act-image-wrapper">
@@ -45,8 +45,8 @@
               <p class="data-published">
                 <i class="far fa-calendar"></i>
                 {{
-                    new Date(article.fields.date_created).getFullYear() +
-                      "-" +
+                  new Date(article.fields.date_created).getFullYear() +
+                  "-" +
                       (new Date(article.fields.date_created).getMonth() + 1) +
                       "-" +
                       new Date(article.fields.date_created).getDate()
