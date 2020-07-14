@@ -192,19 +192,26 @@ section {
   font-size: 18px;
   color: var(--text-color-dark-gray);
 }
+/* 捕捉技巧 */
+.content-wrapper .showcases .article {
+  margin-top: 20px;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.content-wrapper .showcases .article p{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 25px;
+  line-height: 30px;
+}
+.content-wrapper .showcases .article:hover {
 
+}
 /* 关于我们 */
 .about-us {
   margin-bottom: 32px;
   margin-top: 120px;
 }
 
-.features {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 126px 126px;
-  column-gap: 5vw;
-}
 
 .feature {
   display: grid;
@@ -245,99 +252,8 @@ section {
   border: #ccc solid 1px;
 }
 
-/* 成功案例 */
-.showcases {
-  max-width: unset;
-  padding: 0;
-  padding-top: 72px;
-}
 
-.filter-btns {
-  margin-top: 54px;
-  margin-bottom: 38px;
-}
-
-.filter-btn {
-  margin: 0 7px;
-  background-color: var(--secondary-color);
-  border: 0;
-  color: var(--text-color-dark-gray);
-  padding: 8px 18px;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: 0.4s;
-}
-
-.filter-btn:focus,
-.filter-btn:active {
-  outline: none;
-}
-
-.filter-btn.active,
-.filter-btn:hover {
-  background-color: var(--primary-color);
-  color: white;
-}
-
-.showcases .cases {
-  width: 100vw;
-}
-
-.showcases .case-item {
-  width: 25vw;
-  height: 20vw;
-  overflow: hidden;
-}
-
-.case-item img {
-  height: 100%;
-  object-fit: cover;
-}
-
-/* 服务流程 */
-.service {
-  padding-top: 131px;
-}
-
-.services {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
-  column-gap: 38px;
-  row-gap: 34px;
-}
-
-.service-item {
-  display: grid;
-  grid-template-areas:
-    "icon title"
-    "icon content";
-  grid-template-columns: 70px 1fr;
-  grid-template-rows: 1fr 3fr;
-  padding: 24px;
-  box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.06);
-}
-.service-item i.fas {
-  grid-area: icon;
-  font-size: 42px;
-  color: var(--primary-color);
-  padding-top: 6px;
-}
-
-.service-item .service-title {
-  grid-area: title;
-  color: var(--text-color-darker);
-  font-size: 24px;
-}
-.service-item .service-content {
-  grid-area: content;
-  color: var(--text-color-gray);
-  line-height: 30px;
-  font-size: 16px;
-  margin-top: 8px;
-}
-
-/* 团队介绍 */
+/* 成员介绍 */
 .team-intro {
   margin-top: 48px;
   padding-top: 62px;
@@ -351,12 +267,11 @@ section {
 }
 .team-member {
   background-color: white;
-  box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 24px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding-bottom: 28px;
-
+  margin-bottom: 15px;
   transition: 0.4s;
-
   display: grid;
   justify-items: center;
 }
@@ -400,9 +315,10 @@ section {
 }
 
 .team-member:hover {
-  transform: translateY(-20px) scale(1.05);
+  transform:scale(1.2);
   box-shadow: 0px 0px 36px rgba(0, 0, 0, 0.1);
 }
+
 
 /* 数据部分 */
 .data-section {
@@ -421,7 +337,6 @@ section {
   z-index: 20;
   margin-top: 50px;
 }
-
 
 /* 公司动态 */
 .company-activities {

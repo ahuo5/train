@@ -3,15 +3,441 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="index.js"></script>
+    <title>Title</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <style>
+        #all {
+            width: 1540px;
+            height: 100%;
+        }
+
+        #loa {
+
+            width: 1540px;
+            height: 43px;
+            background-color: black;
+        }
+
+        .top {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 1540px;
+            height: 498px;
+            background: url("imgs/bcp2.jpg") repeat 50%;
+        }
+
+        .aa {
+            width: 1170px;
+            height: 298px;
+            margin-top: 100px;
+
+
+        }
+
+        .txt2 {
+            width: 1140px;
+            height: 100px;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .pl {
+            width: 1140px;
+            height: 56px;
+            /*background-color: #b92c28;*/
+            text-align: center;
+
+        }
+
+        h3 {
+            width: 1140px;
+            height: 37px;
+            font-size: 30px;
+            text-align: center;
+
+        }
+
+        .mint {
+            width: 1140px;
+            height: 20px;
+            text-align: center;
+
+        }
+
+        .social {
+            width: 1540px;
+            height: 54px;
+            background-color: silver;
+            margin-top: 498px;
+        }
+
+        /*.navbar-header{*/
+        /*    width: 140px;*/
+        /*    height: 43px;*/
+        /*}*/
+        .navbar {
+            width: 1250px;
+            height: 43px;
+            margin-top: 10px;
+
+        }
+
+        .navbar-nav {
+            width: 1250px;
+            height: 43px;
+        }
+
+        .navbar-brand-sm {
+            width: 140px;
+            height: 40px;
+            text-align: center;
+        }
+
+        .navbar-brand-smin {
+            width: 90px;
+            height: 40px;
+            text-align: center;
+        }
+
+        .navbar-right-sm {
+            width: 140px;
+            height: 40px;
+            text-align: center;
+            margin-left: 140px;
+        }
+
+        a {
+            color: #cccccc;
+        }
+
+        p {
+            color: black;
+            float: left;
+            margin-top: 10px;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .main {
+            width: 1540px;
+            height: 800px;
+
+
+        }
+
+        .main-top {
+            width: 600px;
+            height: 96px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        img {
+            width: 200px;
+            height: 100px;
+        }
+
+        .hang {
+            width: 800px;
+            height: 300px;
+            margin: 0 auto;
+
+        }
+
+        span {
+            color: blue;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        .part2 {
+            width: 200px;
+            height: 100px;
+            text-align: center;
+
+        }
+
+        footer {
+            width: 1540px;
+            height: 250px;
+
+        }
+
+        #imgloge {
+            width: 241px;
+            height: 33px;
+        }
+    </style>
 </head>
 
 <body>
-    <section class="map">
-        <div class="map-content" id="dituContent"></div>
-    </section>
+    <!--整个-->
+    <div id="all">
+        <!--导航栏-->
+        <div id="loa">
+            <div class="container">
+                <div class="navbar">
+                    <!--            <ul class="navbar-header">-->
+                    <ul class="navbar-nav" style="list-style: none">
+                        <li class="navbar-brand-sm">
+                            <a href="http://www.bootcss.com/">Bootstrap中文网</a>
+                        </li>
+                        <!--            </ul>-->
+
+                        <li class="navbar-brand-sm">
+                            <a href="https://v2.bootcss.com/">Bootstrap2中文文档</a>
+                        </li>
+                        <li class="navbar-brand-sm">
+                            <a href="https://v3.bootcss.com/">Bootstrap3中文文档</a>
+                        </li>
+                        <li class="navbar-brand-sm">
+                            <a href="https://v4.bootcss.com/">Bootstrap4中文网</a>
+                        </li>
+                        <li class="navbar-brand-smin">
+                            <a href="https://www.bootcss.com/p/lesscss/">Less 教程</a>
+                        </li>
+                        <li class="navbar-brand-smin">
+                            <a href="https://www.jquery123.com/">jQuery API</a>
+                        </li>
+                        <li class="navbar-brand-smin">
+                            <a href="http://www.youzhan.org/">网站实例</a>
+                        </li>
+                        <li class="navbar-right-sm">
+                            <a href="https://www.bootcss.com/about/">关于</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!--头部-->
+        <div class="top">
+            <div class="container aa">
+                <div class="txt2 ">
+                    <h2 style="font-size: 100px;color:#ffffff">Bootstrap</h2>
+                </div>
+                <h3 style="color: #ffffff;">简洁、直观、强悍的前端开发框架，让web开发更迅速、简单。</h3>
+                <div class="pl ">
+                    <button class="btn" style="background-color: #23527c;color: #cccccc;width: 290px;height: 45px;">
+                        Bootstrap3中文文档(v3.3.7)
+                    </button>
+                </div>
+                <div class="mint ">
+                    <a href="https://v2.bootcss.com/"><span style="color: #cccccc">Bootstrap2中文文档(v2.3.2)</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="social">
+            <div class="container">
+                <ul style="width: 400px;height: 30px;list-style: none;float: left;margin-top: 10px;margin-left: 400px">
+                    <li>
+                        <a href="http://wenda.bootcss.com/">
+                            <p>Bootstrap问答社区</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://weibo.com/bootcss">
+                            <p>| 新浪微博：@Bootstrap中文网</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--中部main-->
+        <div class="main">
+            <div class="main-top">
+                <h2 style="font-size: 40px;margin-top: 50px">Bootstrap相关优质项目推荐</h2>
+                <p style="text-align: center;margin-left: 100px">这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的</p>
+            </div>
+
+            <div class="main-mid" style="margin-top: 50px">
+                <div class="hang">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/3.png" />
+                        <a href="http://www.youzhan.org/">
+                            <div class="part2">
+                                <span>优站精选</span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 35px">Bootstrap 网站实例</p>
+
+                            </div>
+                            <p>Bootstrap 优站精选频道收集了众多基于 Bootstrap 构建、设计精美的、有创意的网站。</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/4.png" />
+                        <a href="https://www.webpackjs.com/">
+                            <div class="part2">
+                                <span>Webpack </span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 15px">是前端资源模块化管理和打包工具</p>
+
+                            </div>
+                            <p>Webpack 是当下最热门的前端资源模块化管理和打包工具。它可以将许多松散的模块按照依赖和规则打包成符合生产环境部署的前端资源。</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/5.png" />
+                        <a href="https://www.reactjscn.com/">
+                            <div class="part2">
+                                <span>React</span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 15px">用于构建用户界面的 JavaScript 框架</p>
+
+                            </div>
+                            <p>React 起源于 Facebook 的内部项目，是一个用于构建用户界面的 JavaScript 库。</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/6.png" />
+                        <a href="https://typescript.bootcss.com/">
+                            <div class="part2">
+                                <span>
+                                    TypeScript </span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 75px">中文手册</p>
+
+                            </div>
+                            <p>TypeScript 是由微软开源的编程语言。它是 JavaScript 的一个超集，而且本质上向这个语言添加了可选的静态类型和基于类的面向对象编程。</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="hang">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/7.png" />
+                        <a href="https://www.jquery123.com/">
+                            <div class="part2">
+                                <span>jQuery API</span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 75px">中文手册</p>
+
+                            </div>
+                            <p>根据最新的 jQuery 1.11.x 和 2.1.x 版本翻译的 jQuery API 中文文档/手册。</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/8.png" />
+                        <a href="https://www.nextjs.cn/">
+                            <div class="part2">
+                                <span>Next.js </span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 75px">中文文档</p>
+
+                            </div>
+                            <p>Next.js 是一个轻量级的 React 服务端渲染应用框架。</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/1.png" />
+                        <a href="https://www.babeljs.cn/">
+                            <div class="part2">
+                                <span>Babel</span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 15px">是一个 JavaScript 编译器。</p>
+
+                            </div>
+                            <p>Babel 是一个 JavaScript 编译器。Babel 通过语法转换器支持最新版本的 JavaScript 语法。</p>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <img src="imgs/2.png" />
+                        <a href="https://www.nodeapp.cn/">
+                            <div class="part2">
+                                <span>
+                                    Node.js</span>
+                                <br>
+                                <p style="font-size: 14px;margin-left: 55px">中文文档 / 手册</p>
+
+                            </div>
+                            <p>Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行环境。Node.js 使用了一个事件驱动、非阻塞式 I/O 的模型，使其轻量又高效。</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--    底部foot-->
+        <hr>
+        <div class="footer">
+            <div class="container">
+                <div class="col-md-6 col-lg-6">
+                    <img src="https://cdn.jsdelivr.net/npm/@bootcss/www.bootcss.com@0.0.3/dist/img/logo.png"
+                        id="imgloge">
+
+                    <p>我们一直致力于为广大开发者提供更多的优质技术文档和辅助开发工具！</p>
+                </div>
+                <div class="col-md-6  col-lg-5 col-lg-offset-1">
+                    <div class="row about">
+                        <div class="col-sm-3">
+                            <h4>关于</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="/about/">关于我们</a></li>
+                                <li><a href="/ad/">广告合作</a></li>
+                                <li><a href="/links/">友情链接</a></li>
+                                <li><a href="/hr/">招聘</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <h4>联系方式</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://weibo.com/bootcss" title="Bootstrap中文网官方微博"
+                                        target="_blank">新浪微博</a></li>
+                                <li><a href="mailto:admin@bootcss.com">电子邮件</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <h4>旗下网站</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.golaravel.com/" target="_blank">Laravel中文网</a></li>
+                                <li><a href="https://www.ghostchina.com/" target="_blank">Ghost中国</a></li>
+                                <li><a href="https://www.bootcdn.cn/" target="_blank">BootCDN</a></li>
+                                <li><a href="https://pkg.phpcomposer.com/" target="_blank">Packagist中国镜像</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2">
+                            <h4>特别致谢</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="https://www.maoyuncloud.com/" target="_blank">猫云</a></li>
+                                <li><a href="https://www.jdcloud.com/" target="_blank">京东云</a></li>
+                                <li><a href="https://www.upyun.com" target="_blank">又拍云</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--    回到顶部v-->
+                    <div class="returntop"
+                        style="width: 45px;height: 40px;background-color: #8c8c8c;text-align: center;margin-left: 580px">
+                        <a id="scrollUp" href="https://www.bootcss.com/#top">
+                            <i class="fa fa-angle-up" style="font-size: 30px;color: #cccccc;margin-top: 14px">^</i>
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="row footer-bottom" style="text-align: center">
+                    <ul class="list-inline ">
+                        <li><a href="http://www.miibeian.gov.cn/"
+                                style="color: black">京ICP备11008151号-6|京公网安备11010802014853</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    </div>
+    <!--整个over-->
 </body>
 
 </html>
