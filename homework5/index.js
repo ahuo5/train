@@ -88,7 +88,7 @@ ScrollReveal().reveal(".data-section", {
     });
     dataSectionEl.style.backgroundPosition = `center calc(50% - ${
       dataSectionEl.getBoundingClientRect().bottom / 5
-    }px)`;
+      }px)`;
   },
 });
 
@@ -99,7 +99,7 @@ window.addEventListener("scroll", () => {
   if (bottom >= 0 && top <= window.innerHeight) {
     dataSectionEl.style.backgroundPosition = `center calc(50% - ${
       bottom / 5
-    }px)`;
+      }px)`;
   }
 });
 
@@ -108,10 +108,10 @@ const scroll = new SmoothScroll('nav a[href*="#"],.scrollToTop a[href*="#"]', {
   offset: 80,
 });
 
-document.addEventListener("scrollStart",()=>{
-    if(headerEl.classList.contains("open")){
-        headerEl.classList.remove("open");
-    }
+document.addEventListener("scrollStart", () => {
+  if (headerEl.classList.contains("open")) {
+    headerEl.classList.remove("open");
+  }
 })
 
 const exploreBtnEls = document.querySelectorAll(".explore-btn");
@@ -123,6 +123,6 @@ exploreBtnEls.forEach((exploreBtnEl) => {
 
 //折叠按钮
 const burgerEl = document.querySelector(".burger");
-burgerEl.addEventListener("click",()=>{
-    headerEl.classList.toggle("open")
+burgerEl.addEventListener("click", () => {
+  headerEl.classList.toggle("open")
 })

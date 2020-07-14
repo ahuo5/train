@@ -35,15 +35,15 @@ const scroll = new SmoothScroll('nav a[href*="#"],.scrollToTop a[href*="#"]', {
   offset: 80,
 });
 
-document.addEventListener("scrollStart",()=>{
-    if(headerEl.classList.contains("open")){
-        headerEl.classList.remove("open");
-    }
+document.addEventListener("scrollStart", () => {
+  if (headerEl.classList.contains("open")) {
+    headerEl.classList.remove("open");
+  }
 })
 
 
 //折叠按钮
 const burgerEl = document.querySelector(".burger");
-burgerEl.addEventListener("click",()=>{
-    headerEl.classList.toggle("open")
+burgerEl.addEventListener("click", () => {
+  headerEl.classList.toggle("open")
 })
