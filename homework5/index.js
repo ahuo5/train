@@ -42,25 +42,7 @@ glide.on("run.before", () => {
 
 glide.mount();
 
-const isotope = new Isotope(".cases", {
-  layoutMode: "fitRows",
-  itemSelector: ".case-item",
-});
 
-const filterBtns = document.querySelector(".filter-btns");
-
-filterBtns.addEventListener("click", (e) => {
-  let { target } = e;
-  const filterOption = target.getAttribute("data-filter");
-  if (filterOption) {
-    document
-      .querySelectorAll(".filter-btn.active")
-      .forEach((btn) => btn.classList.remove("active"));
-    target.classList.add("active");
-
-    isotope.arrange({ filter: filterOption });
-  }
-});
 
 const staggeringOption = {
   delay: 300,
@@ -92,16 +74,7 @@ ScrollReveal().reveal(".data-section", {
   },
 });
 
-window.addEventListener("scroll", () => {
-  const bottom = dataSectionEl.getBoundingClientRect().bottom;
-  const top = dataSectionEl.getBoundingClientRect().top;
 
-  if (bottom >= 0 && top <= window.innerHeight) {
-    dataSectionEl.style.backgroundPosition = `center calc(50% - ${
-      bottom / 5
-      }px)`;
-  }
-});
 
 const scroll = new SmoothScroll('nav a[href*="#"],.scrollToTop a[href*="#"]', {
   header: "header",
