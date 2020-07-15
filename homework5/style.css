@@ -467,6 +467,11 @@ footer {
   padding: 0 80px;
   position: relative;
 }
+.service-menu i{
+  font-size: 120px;
+  text-align: center;
+  color: #ccc;
+}
 
 .menu-title {
   font-size: 16px;
